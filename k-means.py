@@ -42,4 +42,9 @@ k_means.fit(X)
 labels = k_means.labels_
 print(labels)
 
-#===================================INSIGHTS INTO THE DATAFRAME============================================
+#=======================================INSIGHTS INTO THE DATAFRAME=======================================
+
+#================================Assign labels to each row in the dataframe==========================
+df["Clus_km"] = labels
+df.head(5)
+
