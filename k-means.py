@@ -8,3 +8,9 @@ import pandas as pd
 #%matplotlib inline #needed in jupyter notebooks
 
 
+#============================================DATASET=====================================
+
+#===================================Reading the data from the dataset in=================================
+cust_df = pd.read_csv("Cust_Segmentation.csv")
+df = cust_df.head()
+print(df)
