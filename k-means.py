@@ -23,3 +23,9 @@ df = cust_df.drop('Address', axis=1)
 df = df.head()
 print(df)
 
+#=================================Normalizing over standard deviation==============================
+
+X = df.values[:,1:]
+X = np.nan_to_num(X)
+Clus_dataSet = StandardScaler().fit_transform(X)
+print(Clus_dataSet)
