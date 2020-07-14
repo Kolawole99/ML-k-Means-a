@@ -48,3 +48,8 @@ print(labels)
 df["Clus_km"] = labels
 df.head(5)
 
+#==============================Checking for the centroid values by average============================
+centroid = df.groupby('Clus_km').mean()
+print(centroid)
+
+
