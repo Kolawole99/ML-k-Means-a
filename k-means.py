@@ -52,4 +52,10 @@ df.head(5)
 centroid = df.groupby('Clus_km').mean()
 print(centroid)
 
+#=========================Look at the distribution of customers by age and Income=====================
+area = np.pi * ( X[:, 1])**2  
+plt.scatter(X[:, 0], X[:, 3], s=area, c=labels.astype(np.float), alpha=0.5)
+plt.xlabel('Age', fontsize=18)
+plt.ylabel('Income', fontsize=16)
+plt.show()
 
